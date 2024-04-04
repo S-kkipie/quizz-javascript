@@ -1,0 +1,13 @@
+main {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+nav.toggle {
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
