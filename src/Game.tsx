@@ -50,7 +50,7 @@ function Game() {
     );
   });
   return (
-    <Card className={"w-[700px] "}>
+    <Card className={"card"}>
       <CardHeader>
         <CardTitle>Pregunta {questionInfo.id}</CardTitle>
         <CardDescription>Lee atentamente</CardDescription>
@@ -63,6 +63,7 @@ function Game() {
             </p>
             <Editor
               options={{
+                lineDecorationsWidth: 0, // Esto es para ajustar el ancho del área de los números de línea
                 minimap: {
                   enabled: false, // Desactivar la zona de minimapa
                 },
@@ -71,7 +72,7 @@ function Game() {
                 },
               }}
               theme="vs-dark"
-              height="100px"
+              height="150px"
               defaultLanguage="javascript"
               value={questionInfo.code}
             />

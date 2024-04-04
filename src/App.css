@@ -11,3 +11,11 @@ nav.toggle {
   left: 0;
   top: 0;
 }
+.card {
+  width: 40%;
+}
+@media (max-width: 900px) {
+  .card {
+    width: 90%;
+  }
+}
