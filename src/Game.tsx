@@ -24,11 +24,10 @@ function Game() {
     if (userSelectedAnswer === null) {
       return "secondary";
     }
-    if (index !== correctAnswer && index !== userSelectedAnswer) {
-      return "secondary";
-    }
-    if (userSelectedAnswer === correctAnswer) {
-      return;
+    if (userSelectedAnswer !== undefined) {
+      if (index === correctAnswer) {
+        return;
+      }
     }
     if (index === userSelectedAnswer) {
       return "destructive";
