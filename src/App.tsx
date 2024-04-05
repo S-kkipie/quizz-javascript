@@ -5,6 +5,7 @@ import { Button } from "./components/ui/button";
 import { useQuestionsStore } from "./store/questions";
 import Game from "./Game";
 import Footer from "./components/Footer";
+import Alert from "./components/Alert";
 const App = () => {
   const questions = useQuestionsStore((state) => state.questions);
   console.log(questions);
@@ -23,6 +24,7 @@ const App = () => {
               <Game /> <Footer />
             </>
           )}
+          <Alert />
         </main>
       </ThemeProvider>
     </>

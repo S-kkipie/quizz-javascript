@@ -16,7 +16,6 @@ function Game() {
   const currentQuestion = useQuestionsStore((state) => state.currentQuestion);
   const questionInfo = questions[currentQuestion];
   const selectAnswer = useQuestionsStore((state) => state.selectAnswer);
-
   const createHandleClick = (answerIndex: number) => () => {
     selectAnswer(questionInfo.id, answerIndex);
   };
@@ -36,7 +35,6 @@ function Game() {
     }
     return "secondary";
   };
-  console.log(questionInfo);
   const answers = questionInfo.answers.map((value, index) => {
     return (
       <Button
@@ -86,4 +84,5 @@ function Game() {
     </Card>
   );
 }
+
 export default Game;
